@@ -19,7 +19,7 @@ def handle(
             punctuation_frequency_distribution: bool = typer.Option(False, "--punctuation", "-pfd", help="Calculates a frequency distribution of the given text’s punctuation.")
             ):
     if file:
-        with open(f'{text}', 'r', encoding=utf8) as f:
+        with open(f'{text}', 'r', encoding='utf8') as f:
             input_text = f.read()
     elif string:
         input_text = text
